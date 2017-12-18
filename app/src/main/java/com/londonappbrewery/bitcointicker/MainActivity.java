@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
 
-                letsDoSomeNetworking(adapter.getItem(i).toString());
+                letsDoSomeNetworking(adapterView.getItemAtPosition(i).toString());
 
             }
 
