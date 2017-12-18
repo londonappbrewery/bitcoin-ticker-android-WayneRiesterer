@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void updatePriceTextView(JSONObject priceData) {
         try {
-            String price = priceData.getString("ask");
+            String price = priceData.getString("last");
             priceTextView.setText(price);
         } catch (JSONException e) {
             e.printStackTrace();
